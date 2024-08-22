@@ -28,11 +28,9 @@ library(ggExtra)
 library(ggbeeswarm)
 ```
 
-
 ```{r}
 lizards<- read_csv(here("data_tidy", "lizards.csv"))
 ```
-
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -110,7 +108,6 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
        y = "Weight (grams)")
 ```
 
-
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
   geom_point() +
@@ -178,7 +175,6 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
   #scale_color_gradient(low = "coral3", high = "gold3")
 ```
 
-
 ```{r}
 p <- ggplot(data = lizards, aes(x = total_length, y = weight)) +
   geom_point()
@@ -230,5 +226,3 @@ ggplot(data = mono, aes(x = year, y = lake_level)) +
            size = 3) +
   theme_minimal()
 ```
-
-
